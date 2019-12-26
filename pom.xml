@@ -11,6 +11,9 @@
     <modules>
         <module>spring-demo</module>
         <module>spring-assemblybean</module>
+        <module>spring-Ioc</module>
+        <module>spring-aop</module>
+        <module>spring-transaction</module>
     </modules>
 
     <properties>
