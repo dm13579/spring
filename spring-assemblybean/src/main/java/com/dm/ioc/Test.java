@@ -19,7 +19,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
   * @slogan: 我自横刀向天笑，笑完我就去睡觉
   * @version V1.0
   */
-public class test {
+public class Test {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationcontext.xml");
 
