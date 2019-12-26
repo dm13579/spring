@@ -1,7 +1,6 @@
 package com.dm.transaction;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
   *                  ,;,,;
