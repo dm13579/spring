@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Ioc</artifactId>
-
+    <artifactId>spring-ioc</artifactId>
+    <description>SpringIOC 原理研究</description>
 
 </project>

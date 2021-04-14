@@ -12,8 +12,7 @@
     <artifactId>spring-aop</artifactId>
 
     <name>spring-aop</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <description>SpringAOP 测试</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
