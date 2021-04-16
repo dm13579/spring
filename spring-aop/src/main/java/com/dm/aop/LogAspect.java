@@ -27,7 +27,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class LogAspect {
 
-    @Pointcut("@annotation(Action)")
+    @Pointcut("@annotation(com.dm.aop.Action)")
     public void pointcut(){
 
     }

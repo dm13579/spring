@@ -1,2 +1,6 @@
-#核心Logger
-debug: true
+#核心Logger,可以查看核心配置类是否被匹配
+#debug: true
+dm:
+  enable:
+    auto: true
+  name: 哈哈哈哈

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.dm</groupId>
+    <artifactId>customer-springboot-starter</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>dm-spring-boot-starter</artifactId>
+  <name>dm-spring-boot-starter</name>
+  <description>启动器</description>
+
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
+
+    <dependencies>
+      <!--引入autoconfigure-->
+      <dependency>
+        <groupId>com.dm</groupId>
+        <artifactId>dm-spring-boot-autoconfigure</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+
+      <!--如果当前starter 还需要其他的类库就在这里引用-->
+    </dependencies>
+</project>

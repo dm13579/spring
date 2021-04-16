@@ -1,7 +1,14 @@
 package com.dm;
 
+import com.starter.dm.UserServiceClient;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import javax.annotation.Resource;
+import java.util.Arrays;
 
 /**
   *                  ,;,,;
@@ -21,9 +28,24 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
   *@version 1.0
   **/
 @SpringBootApplication
-public class MyApplication {
+@Slf4j
+public class MyApplication implements CommandLineRunner {
+
+    @Resource
+    private ApplicationContext applicationContext;
+
+    @Resource
+    private UserServiceClient userServiceClient;
 
     public static void main(String[] args) {
-        SpringApplication.run(MyApplication.class, args);
+        SpringApplication.run(MyApplication.class);
+    }
+
+    @Override
+    public void run(String... args) {
+//        String[] names = applicationContext.getBeanDefinitionNames();
+//        Arrays.stream(names).forEach(log::info);
+        log.info(userServiceClient.toString());
+//        log.info("项目启动成功，容器注入javaBean:{}个.",names.length);
     }
 }

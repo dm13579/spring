@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "dm.enable.auto",
+      "type": "java.lang.String",
+      "description": "Description for dm.enable.auto."
+  }
+] }
