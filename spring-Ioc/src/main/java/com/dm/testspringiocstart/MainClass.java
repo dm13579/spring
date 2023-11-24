@@ -1,7 +1,6 @@
 package com.dm.testspringiocstart;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContextExtensionsKt;
 
 /**
  * @ClassName MainClass
