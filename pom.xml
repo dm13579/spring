@@ -13,6 +13,8 @@
         <module>spring-aop</module>
         <module>spring-transaction</module>
         <module>springboot-quickstart</module>
+        <module>customer-springboot-starter</module>
+        <module>spring-mybatis</module>
     </modules>
 
     <properties>
@@ -106,6 +108,25 @@
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
             <version>1.9.5</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
         </dependency>
     </dependencies>
 
