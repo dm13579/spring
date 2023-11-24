@@ -38,14 +38,17 @@ public class MyApplication implements CommandLineRunner {
     private UserServiceClient userServiceClient;
 
     public static void main(String[] args) {
-        SpringApplication.run(MyApplication.class);
+        SpringApplication springApplication = new SpringApplication(MyApplication.class);
+        springApplication.addListeners(new MyApplicationListener());
+        springApplication.run();
     }
 
     @Override
     public void run(String... args) {
-//        String[] names = applicationContext.getBeanDefinitionNames();
-//        Arrays.stream(names).forEach(log::info);
+        // 测试springboot starter
+        String[] names = applicationContext.getBeanDefinitionNames();
+        Arrays.stream(names).forEach(log::info);
         log.info(userServiceClient.toString());
-//        log.info("项目启动成功，容器注入javaBean:{}个.",names.length);
+        log.info("项目启动成功，容器注入javaBean:{}个.",names.length);
     }
 }
